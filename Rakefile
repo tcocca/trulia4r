@@ -9,6 +9,24 @@ begin
     s.email = "tom.cocca@gmail.com"
     s.homepage = "http://github.com/tcocca/trulia4r"
     s.description = "Simple Ruby wrapper for the Trulia API built on HTTParty"
+    s.files = [
+      "lib/trulia4r.rb",
+      "lib/trulia4r/client.rb",
+      "lib/trulia4r/location_info.rb",
+      "lib/trulia4r/trulia_stats.rb",
+      "examples/trulia.rb",
+      "README",
+      "LICENSE",
+      "Rakefile",
+      "VERSION.yml",
+      "tasks/rspec.rake",
+      "spec/rcov.opts",
+      "spec/spec.opts",
+      "spec/spec_helper.rb",
+      "spec/trulia4r/client_spec.rb",
+      "spec/trulia4r/location_info_spec.rb",
+      "spec/trulia4r/trulia_stats_spec.rb"
+    ]
     s.authors = ["Tom Cocca"]
     s.add_dependency 'httparty'
   end

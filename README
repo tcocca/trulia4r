@@ -1,9 +1,41 @@
 trulia4r
-========
-
-Description goes here.
-
-COPYRIGHT
 =========
 
-Copyright (c) 2008 Tom Cocca. See MIT-LICENSE for details.
+Trulia4r is a Ruby wrapper for the Trulia API.  It utilizes the amazing HTTParty gem by John Nunemaker.
+If you need to build an API wrapper that gem is an enourmous help, refer to the following:
+
+http://railstips.org/2008/7/29/it-s-an-httparty-and-everyone-is-invited
+
+
+Trulia API Docs
+=========
+
+http://developer.trulia.com/
+
+You will need to register for a Trulia API Key.
+
+
+USAGE
+==========
+
+See http://github.com/tcocca/trulia4r/tree/master/examples
+
+
+INSTALATION
+==========
+
+sudo gem install tcocca-trulia4r -s http://gems.github.com
+
+
+QUESTION/CONCERNS/COMMENTS
+==========
+
+Send me an email through github or at tom dot cocca at gmail dot com
+Feel free to fork and submit changes
+There is a test suite built on rspec.  Considering rebuilding or duping the suite with Shoulda (any thoughts?)
+
+
+COPYRIGHT
+==========
+
+Copyright (c) 2008 Tom Cocca. See LICENSE for details.

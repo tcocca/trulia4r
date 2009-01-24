@@ -4,12 +4,17 @@ require File.dirname(__FILE__) + '/../lib/trulia4r'
 # http://developer.trulia.com/docs
 
 # Initialize a new Trulia client
+
 client = Trulia4r::Client.new('apikey')
 
+
 # Initialize a new LocationInfo object
+# Refer to the API Docs here: http://developer.trulia.com/docs/LocationInfo
+
 loc = Trulia4r::LocationInfo.new(client)
 
 # Available methods on the LocationInfo object
+
 cities = loc.get_cities_in_state('MA')
 counties = loc.get_counties_in_state('MA')
 neighs = loc.get_neighborhoods_in_city('Boston', 'MA')
@@ -17,7 +22,7 @@ states = loc.get_states
 zips = loc.get_zip_codes_in_state('MA')
 
 
-# The following is available to all of the above calls
+# The following is available to all of the above
 if zip.success?
   puts zips.data  # Returns just the data portion of the response
   puts zips.body  # Returns the full body of the response
@@ -27,6 +32,8 @@ end
 
 
 # Initialize a new TruliaStats object
+# Refer to the API Docs here: http://developer.trulia.com/docs/TruliaStats
+
 stats = Trulia4r::TruliaStats.new(client)
 
 # Available methods on the TruliaStats object

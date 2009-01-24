@@ -6,7 +6,7 @@ describe Trulia4r::Client do
   
   describe 'initialize' do
     before do
-      @client = Trulia4r::Client.new('some_api_key')
+      @client = Trulia4r::Client.new('tkgvp2ghwpnp2mphydeyf7fw')
     end
     
     it 'sets the base_uri' do 
@@ -18,7 +18,7 @@ describe Trulia4r::Client do
     end
     
     it 'sets default params to include the api key' do
-      @client.class.default_params.should == {:apikey => 'some_api_key'}
+      @client.class.default_params.should == {:apikey => 'tkgvp2ghwpnp2mphydeyf7fw'}
     end
   end
   
